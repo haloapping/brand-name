@@ -1,0 +1,395 @@
+:root {
+  --light-background-color: #ffffff;
+  --secondary: #f3cd03;
+  --secondary-color-1: #40bb15;
+  --faded-primary-color: #b2e3ff;
+  --faded-secondary-color-1: #b9eaa8;
+  --faded-secondary-color-2: #ffdcd1;
+  --danger-text-color: #e74040;
+  --light-gray-1: #fafafa;
+  --muted-color: #bdbdbd;
+  --primary-color: #23a6f0;
+  --danger-color: #e74040;
+  --light-text-color: #ffffff;
+  --text-color: #252b42;
+  --primary-text-color: #23a6f0;
+  --second-text-color: #737373;
+  --alert-color: #e77c40;
+  --success-color: #2dc071;
+}
+
+*,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 2000px;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Header */
+header {
+  height: 729px;
+  background-image: url("/images/header/bg-header.png");
+  margin-bottom: 112px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 200px;
+  margin-right: 200px;
+  height: 91px;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+.left-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 41px;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 21px;
+  list-style-type: none;
+}
+
+.nav-menu a {
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--second-text-color);
+  line-height: 24px;
+  letter-spacing: 0.2px;
+}
+
+.brand-name {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 32px;
+  letter-spacing: 0.1px;
+  color: var(--text-color);
+}
+
+.right-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 45px;
+}
+
+.login-link {
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.member-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 214px;
+  height: 52px;
+  background-color: var(--primary-color);
+  border-radius: 5px;
+}
+
+.member-link span {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 22px;
+  letter-spacing: 0.2px;
+  color: var(--light-text-color);
+}
+
+.headline {
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-top: 125px;
+  width: 599px;
+  height: 401px;
+}
+
+.sub-headline {
+  margin-bottom: 35px;
+}
+
+.sub-headline h5 {
+  margin-bottom: 35px;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+  color: var(--primary-color);
+}
+
+.sub-headline .text-1 {
+  margin-bottom: 35px;
+  font-size: 58px;
+  font-weight: bold;
+  line-height: 80px;
+  letter-spacing: 0.2px;
+  color: var(--text-color);
+}
+
+.sub-headline .text-2 {
+  font-size: 20px;
+  color: var(--second-text-color);
+  line-height: 30px;
+  letter-spacing: 0.2px;
+}
+
+.headline-link {
+  display: flex;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.headline-link a {
+  text-decoration: none;
+}
+
+a.join-us {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 22px;
+  letter-spacing: 0.2px;
+  padding: 15px 40px;
+  border-radius: 5px;
+  background-color: var(--primary-color);
+  color: var(--light-text-color);
+}
+
+.learn-more {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 22px;
+  letter-spacing: 0.2px;
+  padding: 15px 40px;
+  border-radius: 5px;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+}
+
+/* Main */
+.education-accessible {
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-bottom: 160px;
+}
+
+.education-accessible .heading {
+  margin-bottom: 112px;
+}
+
+.education-accessible .heading h6 {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  margin-bottom: 10px;
+  color: var(--primary-text-color);
+}
+
+.education-accessible .heading h2 {
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 50px;
+  letter-spacing: 0.2px;
+  margin-bottom: 10px;
+  color: var(--text-color);
+}
+
+.education-accessible .heading p {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  margin-bottom: 10px;
+  width: 463px;
+  color: var(--second-text-color);
+}
+
+.education-accessible .cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.education-accessible .cards .card {
+  display: flex;
+  flex-direction: column;
+  width: 238px;
+  height: 292px;
+  padding: 35px 40px;
+  background-color: var(--light-background-color);
+  box-shadow: 1px 8px 10px var(--muted-color);
+}
+
+.education-accessible .cards .card .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 76px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.bg-icon-evaluation-time {
+  background-color: var(--faded-primary-color);
+}
+
+.bg-icon-sales-planning {
+  background-color: var(--faded-secondary-color-1);
+}
+
+.bg-icon-books-liberary {
+  background-color: var(--faded-primary-color);
+}
+
+.bg-icon-market-analysis {
+  background-color: var(--faded-secondary-color-2);
+}
+
+.education-accessible .cards .card img {
+  width: 32px;
+  height: 32px;
+}
+
+span.horizontal-line {
+  background-color: var(--danger-color);
+  width: 50px;
+  height: 2px;
+  margin-bottom: 20px;
+}
+
+.bold {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+  margin-bottom: 20px;
+}
+
+.education-accessible-continue {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-bottom: 160px;
+}
+
+.img-decoration {
+  position: relative;
+  width: 425px;
+  height: 506px;
+}
+
+.blue-rectangle {
+  position: absolute;
+  z-index: -1;
+  top: -30px;
+  left: 340px;
+}
+
+.red-ellipse {
+  position: absolute;
+  z-index: -1;
+  top: 470px;
+  left: -35px;
+}
+
+.education-accessible-continue .img-person {
+  width: 425px;
+  height: 506px;
+  border-radius: 50px;
+}
+
+.education-accessible-continue .right-content {
+  width: 381px;
+}
+
+span.big-horizontal-line {
+  display: inline-block;
+  background-color: var(--danger-color);
+  width: 94px;
+  height: 7px;
+  margin-bottom: 35px;
+}
+
+.right-content h2 {
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 50px;
+  letter-spacing: 0.2px;
+  margin-bottom: 35px;
+  color: var(--text-color);
+}
+
+.right-content p {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  margin-bottom: 35px;
+  color: var(--second-text-color);
+}
+
+.learn-more-next {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: var(--primary-text-color);
+}
+
+.course {
+  display: flex;
+  flex-direction: column;
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-bottom: 160px;
+}
+
+.course .heading {
+  margin-bottom: 112px;
+}
+
+.course .heading h6 {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  margin-bottom: 10px;
+  color: var(--primary-text-color);
+}
+
+.course .heading h2 {
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 50px;
+  letter-spacing: 0.2px;
+  margin-bottom: 10px;
+  color: var(--text-color);
+}
+
+.course .heading p {
+  width: 463px;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  margin-bottom: 10px;
+  color: var(--second-text-color);
+}
+
+.card-courses {
+  display: flex;
+}
