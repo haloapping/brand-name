@@ -157,7 +157,7 @@ nav a {
   text-decoration: none;
 }
 
-a.join-us {
+.headline-link a.join-us {
   font-size: 14px;
   font-weight: bold;
   line-height: 22px;
@@ -656,11 +656,6 @@ span.big-horizontal-line {
   line-height: 24px;
   letter-spacing: 0.2px;
   color: var(--second-text-color);
-}
-
-.join-us {
-  margin-left: 200px;
-  margin-right: 200px;
 }
 
 .join-us .heading {
