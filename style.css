@@ -769,7 +769,7 @@ span.big-horizontal-line {
   flex-direction: column;
 }
 
-footer p {
+footer p.text {
   width: 100%;
   height: 76px;
   font-size: 14px;
